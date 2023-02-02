@@ -23,13 +23,25 @@ body{
 .navbar_item{
 	display:inline-block;
 	margin-left: 2vw;
-	margin-top: 5vh ;
+	margin-top: 5vh ;	
 }
+
+.navbar_item:hover{
+	border-style: solid;
+	border-width: 3px;
+	border-image-slice: 1;
+	border-image-source:  linear-gradient(to right ,  rgba(78,9,121,1) , rgba(0,255,209,1)) ;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
 
 .navbar_item>a{
 	text-decoration: none;
 	color:#FAF9F6;
 }
+
 /*icon at the navbar*/
 #icon{
 	position: absolute;
@@ -68,7 +80,7 @@ body{
 /*image inside header*/
 #header-image{
 	height:60vh;
-	width:25vw;
+	width:27vw;
 
 	margin-top: 5vh;
 
@@ -81,9 +93,12 @@ body{
 /*Header content*/
 #header-content>h1{
 	font-size: 2.8em;
-	margin-bottom: 1vh;
+	margin-bottom: 5vh;
 }
 /*making the text in the header p element content look cool*/
+#header-content > p{
+	margin-left: 5vw;
+}
 #first_span{
 	margin-left: 2vw;
 }
@@ -94,14 +109,14 @@ body{
 
 /*social part*/
 #header-content>#social{
-	border: 1px solid red;
 	height:10vh;
 
 	margin-top: 10vh;
 }
 
 #social{
-
+	display: flex;
+	justify-content: center;
 }
 
 .social_item{
@@ -110,7 +125,22 @@ body{
 	height:50px;
 	width:50px;
 
-	
+	margin-left: 3vw;
 
-	border: 1px solid blue;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	cursor: pointer;
+}
+
+.fb{
+	background-image:url("images/icons/fb.png") ;
+}
+
+.ins{
+	background-image:url("images/icons/ins.png") ;
+}
+
+.wa{
+	background-image:url("images/icons/wa.png") ;
 }
