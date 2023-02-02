@@ -1,0 +1,146 @@
+/*importing google font*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+/*body background color and text color and font*/
+body{
+	margin:0;
+	background-color: #100c08;
+	color:#FAF9F6;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+/*navbar*/
+#navbar{
+	position:fixed;
+	display: flex;
+	justify-content: center;
+	top:0;
+
+	width:100vw;
+}
+
+/*navbar items*/
+.navbar_item{
+	display:inline-block;
+	margin-left: 2vw;
+	margin-top: 5vh ;	
+}
+
+.navbar_item:hover{
+	border-style: solid;
+	border-width: 3px;
+	border-image-slice: 1;
+	border-image-source:  linear-gradient(to right ,  rgba(78,9,121,1) , rgba(0,255,209,1)) ;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+
+.navbar_item>a{
+	text-decoration: none;
+	color:#FAF9F6;
+}
+
+/*icon at the navbar*/
+#icon{
+	position: absolute;
+	left:1vw;
+
+	margin-left: 0;
+	margin-top: 0;
+
+	width:100px;
+	height:100px;
+
+	background-image:url("images/invis_logo.png") ;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/*main section*/
+#header{
+	width:70vw;
+	height:60vh;
+
+	padding-bottom: 10vh;
+
+	position: absolute;
+	top:15vh;
+	left:15vw;
+	
+	display: flex;
+	justify-content: space-around;
+
+
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+/*image inside header*/
+#header-image{
+	height:60vh;
+	width:27vw;
+
+	margin-top: 5vh;
+
+	background-image:url("images/image_2.jpg") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+}
+
+/*Header content*/
+#header-content>h1{
+	font-size: 2.8em;
+	margin-bottom: 5vh;
+}
+/*making the text in the header p element content look cool*/
+#header-content > p{
+	margin-left: 5vw;
+}
+#first_span{
+	margin-left: 2vw;
+}
+
+#second_span{
+	margin-left: 4vw;
+}
+
+/*social part*/
+#header-content>#social{
+	height:10vh;
+
+	margin-top: 10vh;
+}
+
+#social{
+	display: flex;
+	justify-content: center;
+}
+
+.social_item{
+	display: inline-block;
+
+	height:50px;
+	width:50px;
+
+	margin-left: 3vw;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	cursor: pointer;
+}
+
+.fb{
+	background-image:url("images/icons/fb.png") ;
+}
+
+.ins{
+	background-image:url("images/icons/ins.png") ;
+}
+
+.wa{
+	background-image:url("images/icons/wa.png") ;
+}
