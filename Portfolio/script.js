@@ -7,29 +7,23 @@ for(let i of gridItemList){
 		console.log('over');
 		i.classList.toggle("mouse-over-image");
 	})
-	// adding click event that adds class and changes display
-	// of other elements, clicking again returns to normal 
+
 	i.addEventListener("click",function(){
 		console.log('click');
-		i.classList.add('clicked');
-		
-		for(let x of gridItemList){
-			if(x.classList.toString().includes("clicked")){
-				x.addEventListener('click',function(){
-					this.classList.toggle('clicked');
-					for (let z of gridItemList){
-						z.style.display = 'inline-block';
-					}
-				})
+		i.classList.toggle('clicked');
+
+		let newArr = [];
+		for (let y of gridItemList){
+			if (!(y.classList.toString().includes("clicked"))){
+				newArr.push(y);
 			}else{
-				x.style.display = 'none';
+				i.classList.toggle('clicked');
 			}
 		}
-		let exitBtn = document.createElement('p');
-		exitBtn.textContent = "X"
-		exitBtn.classList.add = 'del';
-
-		// document.querySelector("#image-display").append
+		console.log(newArr);
+		for(let x of newArr){
+			x.classList.toggle('appear');
+		}
 	})
 
 	i.addEventListener("mouseout",function(){

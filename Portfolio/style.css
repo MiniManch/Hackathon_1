@@ -213,6 +213,9 @@ button>a{
 	background-size: contain;
 
 	margin-top:2vh;
+
+	transition: all 0.5s;
+	display: inline-block;
 }
 
 #image-1{
@@ -296,4 +299,8 @@ button>a{
 
 	width: 100vw;
 	height:100vh;
+}
+
+.appear{
+	display: none !important;
 }
