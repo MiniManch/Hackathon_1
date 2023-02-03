@@ -63,14 +63,13 @@ body{
 
 
 /*main section*/
-section{
+#collage{
 	width:80vw;
 	height:80vh;
 
 	padding-bottom: 10vh;
 
 	position: absolute;
-
 	left:10vw;
 
 	color:#100c08 ;
@@ -115,7 +114,7 @@ section{
 	top: 12%;
 	left: 28%;
 	padding: 3vw;
-	background-color: rgba(250, 249, 246, 0.7);
+	background-color: rgba(250, 249, 246, 0.8);
 }
 
 .middle-image{
@@ -125,6 +124,47 @@ section{
 	background-image:url("../images/image-middle.jpg") ;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+.symbol{
+	height:30vh;
+	width:20vw;
+
+	position: absolute;
+	bottom: -10vh;
+	left:30vw;
+
+	background-color: rgba(250, 249, 246, 1);
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
 
 }
 
+.symbol-image{
+	height: 30vh;
+	margin-left: 3.5vw;
+
+	background-image:url("../images/face.png") ;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#gallery-link{
+	width:66vw;
+	height:100vh;
+	position: relative;
+	margin-left: 7vw;
+	background-color:rgba(250, 249, 246, 1) ;
+}
+
+.gallery-link-img{
+	width:512px;
+	height:512px;
+
+	position: absolute;
+	left:14vw;
+	top: 5vh;
+	background-image:url("../images/image_1.jpg") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
