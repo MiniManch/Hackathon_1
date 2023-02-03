@@ -11,19 +11,22 @@ body{
 
 /*navbar*/
 #navbar{
-	position:fixed;
+	position:absolute;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	top:0;
+	left:0;
 
-	width:100vw;
+	width:10vw;
+	height: 60vh;
 }
 
 /*navbar items*/
 .navbar_item{
 	display:inline-block;
 	margin-left: 2vw;
-	margin-top: 3vh ;	
+	margin-top: 3vh ;
+	width: fit-content;	
 }
 
 .navbar_item:hover{
@@ -45,8 +48,8 @@ body{
 /*icon at the navbar*/
 #icon{
 	position: absolute;
+	top:1vh !important;
 	left:1vw;
-
 	margin-left: 0;
 	margin-top: 0;
 
@@ -67,7 +70,7 @@ section{
 	padding-bottom: 10vh;
 
 	position: absolute;
-	top:15vh;
+
 	left:10vw;
 
 	color:#100c08 ;
@@ -124,3 +127,4 @@ section{
 	background-size: contain;
 
 }
+
