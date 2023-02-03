@@ -7,11 +7,13 @@ body{
 	background-color: #100c08;
 	color:#FAF9F6;
 	font-family: 'Space Grotesk', sans-serif;
+	
+	height:100%;
 }
 
 /*navbar*/
 #navbar{
-	position:absolute;
+	position:fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -149,6 +151,7 @@ body{
 	background-size: contain;
 }
 
+/*image with link to store*/
 #gallery-link{
 	width:66vw;
 	height:130vh;
@@ -164,16 +167,17 @@ body{
 	position: absolute;
 	left:6vw;
 	top: 5vh;
+
 	background-image:url("../images/image_1.jpg") ;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+/*button to store*/
 button{
 	position: absolute;
-	left:40%;
+	left:35%;
 	top:55vh;
-	width:10vw;
+	width:15vw;
 	height:10vh;
 	background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
 	border-radius: 8px;
@@ -189,9 +193,86 @@ button>a{
 	text-decoration: none;
 }
 
-button:active,
-button:hover {
-  outline: 0;
+#image-display{
+	position: absolute;
+	bottom: -240vh;
+
+	height:100vh;
+	width: 100vw;
+
+ 	display: grid;
+  	grid-template-columns: auto auto auto auto auto auto auto auto;
+  	grid-template-rows:    auto auto auto auto auto auto auto auto;
+  	background-color: rgba(255, 255, 255, 1);
 }
 
+.grid-item{
+	padding: 20px;
 
+  	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#image-1{
+	grid-column-start: 1;
+  	grid-column-end: 2;
+
+  	grid-row-start:1 ;
+  	grid-row-end: 6 ;
+
+  	background-image:url("../images/gallery/1.jpg") ;
+}
+
+#image-2{
+	grid-column-start: 3;
+  	grid-column-end: 5;
+
+  	grid-row-start:1 ;
+  	grid-row-end: 4 ;
+  	
+  	background-image:url("../images/gallery/2.jpg") ;
+}
+
+#image-3{
+	grid-column-start: 4;
+  	grid-column-end: 6;
+
+  	grid-row-start:5 ;
+  	grid-row-end: 8 ;
+  	
+  	background-image:url("../images/gallery/3.jpg") ;
+
+	margin-right: 2vw;
+}
+
+#image-4{
+	grid-column-start: 2;
+  	grid-column-end: 4;
+
+  	grid-row-start:6 ;
+  	grid-row-end: 9 ;
+  	
+  	background-image:url("../images/gallery/4.jpg") ;
+}
+
+#image-5{
+	grid-column-start: 7;
+  	grid-column-end: 9;
+
+  	grid-row-start:1 ;
+  	grid-row-end: 8 ;
+  	
+  	background-image:url("../images/gallery/7.jpg") ;
+	
+}
+
+#image-6{
+
+	grid-column-start: 5;
+  	grid-column-end: 7;
+
+  	grid-row-start:2 ;
+  	grid-row-end: 5 ;
+  	
+  	background-image:url("../images/gallery/6.jpg") ;
+}
