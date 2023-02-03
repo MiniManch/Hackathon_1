@@ -211,6 +211,8 @@ button>a{
 
   	background-repeat: no-repeat;
 	background-size: contain;
+
+	margin-top:2vh;
 }
 
 #image-1{
@@ -219,6 +221,8 @@ button>a{
 
   	grid-row-start:1 ;
   	grid-row-end: 6 ;
+
+  	margin-left: 1vw;
 
   	background-image:url("../images/gallery/1.jpg") ;
 }
@@ -242,7 +246,6 @@ button>a{
   	
   	background-image:url("../images/gallery/3.jpg") ;
 
-	margin-right: 2vw;
 }
 
 #image-4{
@@ -275,4 +278,22 @@ button>a{
   	grid-row-end: 5 ;
   	
   	background-image:url("../images/gallery/6.jpg") ;
+}
+
+.mouse-over-image{
+	opacity: 0.8;
+}
+
+.clicked{
+	grid-column-start: unset !important;
+  	grid-column-end: unset !important;
+
+  	grid-row-start:unset !important;
+  	grid-row-end: unset !important;
+
+	position: absolute !important;
+	left:20vw !important;
+
+	width: 100vw;
+	height:100vh;
 }
