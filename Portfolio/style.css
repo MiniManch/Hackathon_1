@@ -297,8 +297,9 @@ button>a{
 	position: absolute !important;
 	left:20vw !important;
 
-	width: 100vw;
+	width: 100vw !important;
 	height:100vh;
+	border:1px solid red;
 }
 
 .appear{

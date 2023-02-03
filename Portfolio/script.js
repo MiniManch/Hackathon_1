@@ -10,20 +10,24 @@ for(let i of gridItemList){
 
 	i.addEventListener("click",function(){
 		console.log('click');
-		i.classList.toggle('clicked');
+		console.log('this',this);
+		this.classList.add('clicked');
 
 		let newArr = [];
 		for (let y of gridItemList){
 			if (!(y.classList.toString().includes("clicked"))){
 				newArr.push(y);
 			}else{
-				i.classList.toggle('clicked');
+				y.addEventListener('click',function(){
+					y.classList.toggle('clicked');
+				})
 			}
 		}
 		console.log(newArr);
 		for(let x of newArr){
 			x.classList.toggle('appear');
 		}
+
 	})
 
 	i.addEventListener("mouseout",function(){
