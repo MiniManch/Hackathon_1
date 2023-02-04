@@ -287,21 +287,16 @@ button>a{
 	opacity: 0.8;
 }
 
-.clicked{
-	grid-column-start: unset !important;
-  	grid-column-end: unset !important;
-
-  	grid-row-start:unset !important;
-  	grid-row-end: unset !important;
-
-	position: absolute !important;
-	left:20vw !important;
-
-	width: 100vw !important;
-	height:100vh;
-	border:1px solid red;
-}
-
 .appear{
 	display: none !important;
+}
+
+.display-new{
+	width:50vw;
+	height:50vh;
+	position: absolute;
+	left:25vw;
+
+	background-repeat: no-repeat;
+	background-size: contain;
 }
