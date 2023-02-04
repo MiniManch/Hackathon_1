@@ -19,7 +19,7 @@ body{
 	justify-content: center;
 	left:0;
 
-	width:10vw;
+	width:8vw;
 	height: 60vh;
 }
 
@@ -350,4 +350,13 @@ button>a{
 	color:black;
 	font-size: 20px;
 	cursor: pointer;
+}
+
+.textDiv-style{
+	position: absolute;
+	left:0;
+	top:10vh;
+	width:5vw;
+	height:5vh;
+	color: '#100c08';
 }
