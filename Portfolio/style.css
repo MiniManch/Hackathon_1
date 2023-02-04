@@ -45,7 +45,8 @@ nav{
 	display:inline-block;
 	margin-left: 2vw;
 	margin-top: 3vh ;
-	width: fit-content;	
+	width: fit-content;
+	height:2vh;
 }
 
 .navbar_item:hover{

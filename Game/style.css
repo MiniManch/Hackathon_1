@@ -1,0 +1,118 @@
+/*importing google font*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+/*body background color and text color and font*/
+body{
+	margin:0;
+	background-color: #100c08;
+	color:#FAF9F6;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+/*navbar start*/
+
+#navbar{
+	position:fixed;
+	display: flex;
+	justify-content: center;
+	top:0;
+
+	width:100vw;
+	height:8vh;
+	background-color: #100c08;
+	z-index: 1;
+}
+
+
+nav{
+	transition: all 0.8s;
+}
+
+/*navbar items*/
+.navbar_item{
+	padding:0;
+	display:inline-block;
+	margin-left: 2vw;
+	margin-top: 3vh ;
+	width: fit-content;	
+	height:2.5vh;
+}
+
+.navbar_item:hover{
+	border-style: solid;
+	border-width: 3px;
+	border-image-slice: 1;
+	border-image-source:  linear-gradient(to left ,  rgba(78,9,121,1) , rgba(0,255,209,1)) ;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+
+.navbar_item>a{
+	text-decoration: none;
+	color:#FAF9F6;
+}
+
+/*icon at the navbar*/
+#icon{
+	position: absolute;
+	top:1vh !important;
+	left:1vw;
+	margin-left: 0;
+	margin-top: 0;
+
+	width:100px;
+	height:100px;
+
+	background-image:url("https://iili.io/H1M8u7S.png") ;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/*navbar end*/
+main{
+	height:50vh;
+	width:55vw;
+	position: absolute;
+	top:20vh;
+	left:25vw;
+}
+
+.container{
+	height:100%;
+	width:100%;
+}
+
+.col{
+	border: 1px solid red;
+	height:30vh;
+}
+
+.image_1{
+	background-image:url("../images/gallery/2.jpg") ;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color:white;
+}
+
+.image_2{
+	background-image:url("../images/gallery/4.jpg") ;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color:white;
+}
+
+.image_3{
+	background-image:url("../images/gallery/5.jpg") ;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color:white;
+}
+
+.image_4{
+background-image:url("../images/gallery/6.jpg") ;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color:white;	
+}
