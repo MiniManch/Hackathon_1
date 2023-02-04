@@ -85,7 +85,7 @@ main{
 }
 
 .col{
-	border: 1px solid red;
+	border: 1px solid black;
 	height:30vh;
 }
 
@@ -111,8 +111,19 @@ main{
 }
 
 .image_4{
-background-image:url("../images/gallery/6.jpg") ;
+	background-image:url("../images/gallery/6.jpg") ;
 	background-repeat: no-repeat;
 	background-size: contain;
 	color:white;	
+}
+
+.hidden{
+	background-image:none !important ;
+	background-color: red;
+
+}
+button{
+	position: absolute;
+	left:15vw;
+	top:10vh;
 }
