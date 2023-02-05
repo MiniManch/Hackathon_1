@@ -1,22 +1,36 @@
 // creating container
-let container = document.createElement('div');
-let main      = document.querySelector('main');
+// let container = document.createElement('div');
+// let main      = document.querySelector('main');
 let startBtn  = document.querySelector('button');
+
+let body      = document.querySelector('body');
 // random integer funciton
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-let imageClassList = ['image_1','image_2','image_3','image_4','image_1','image_2','image_3','image_4'];
-container.classList.add('container','text-center');
-
-// creating rows
-let rowOne   = document.createElement('div');
-let rowTwo   = document.createElement('div');
+// // creating rows
+// let rowOne   = document.createElement('div');
+// let rowTwo   = document.createElement('div');
 
 function startgame(){
+	// creating container
+	let container = document.createElement('div');
+	container.classList.add('container','text-center','del');
+	
+	let main      = document.createElement('main');
+	main.classList.add('del');
+	body.append(main);
+	
+	let startBtn  = document.querySelector('button');
+	// creating rows
+	let rowOne   = document.createElement('div');
+	let rowTwo   = document.createElement('div');
+	
 	let i = 0;
+	let imageClassList = ['image_1','image_2','image_3','image_4','image_1','image_2','image_3','image_4'];
 	let copyList = imageClassList;
+	console.log('list',copyList);
 	// create cards with random classes out of the
 	// array of classes making sure we get random draw every game
 	while(i < 8){
@@ -26,7 +40,7 @@ function startgame(){
 
 		// Adding classes that contain style, also hidden class for the game
 		copyList.splice(randNum,1);
-	 	image.classList.add('col',item , 'hidden');
+	 	image.classList.add('col',item , 'hidden','del');
 	 	image.id = `image_${i}`;
 	 	if(i<4){
 	 		rowOne.append(image);
@@ -38,7 +52,8 @@ function startgame(){
 	// appending into rows  and then tothe container and the main 
 	let rows     = [rowOne,rowTwo];
 	for(let i of rows){
-		i.classList.add('row');
+		i.classList.add('row','del');
+		console.log(i);
 		container.append(i);
 	}
 	main.append(container);
@@ -50,7 +65,6 @@ function guess(){
 	let num = 0;
 	// adding event listener so we can click and it shows;
 	let imageList = document.querySelectorAll('.hidden');
-	console.log(imageList);
 	for (let i of imageList){
 		console.log(i);
 		i.addEventListener('click',function(){
@@ -88,10 +102,9 @@ function gameOver(){
 }
 
 function actualGame(){
-	// reset the game 
-	let resetList = main.children;
-	for (let i of resetList){
-		main.removeChild(i);
+	let delList = document.querySelectorAll('.del');
+	for(let i of delList){
+		i.parentNode.removeChild(i);
 	}
 	startgame();
 	guess();
