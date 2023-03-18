@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block style %}{{url_for('static',filename='style/portfolio.css')}} {% endblock %}
+
+	{% block content %}
+	<main>
+		<!-- image collage -->
+		<section id="collage">
+			<div class="background">
+				<div class="image-container ">
+					<div class="image image-left"></div>
+				</div>
+				<div class="image-container ">
+					<div class="image image-right"></div>
+				</div>
+			</div>
+			<div class="image-container-md">
+				<div class="middle-image"></div>
+			</div>
+			<div>
+				<div class="symbol">
+					<a href="{{url_for('game')}}"><div class="symbol-image"></div></a>
+				</div>
+			</div>
+			<section id="gallery-link">
+				<div class="gallery-link-img">
+					<button><a href="https://tinyurl.com/2s6ftnur" target="_blank">Store</a> </button> 
+				</div>
+			</section>
+			<!-- image collage -->
+
+			
+		</section>
+		<!-- display -->
+		<section id='image-display'>
+			<div id="image-1" class="grid-item"><a href="{{url_for('details',image_id = 'image-1')}}"></a></div>
+			<div id="image-2" class="grid-item"><a href="{{url_for('details',image_id = 'image-2')}}"></a></div>
+			<div id="image-3" class="grid-item"><a href="{{url_for('details',image_id = 'image-3')}}"></a></div>
+			<div id="image-4" class="grid-item"><a href="{{url_for('details',image_id = 'image-4')}}"></a></div>
+			<div id="image-5" class="grid-item"><a href="{{url_for('details',image_id = 'image-5')}}"></a></div>
+			<div id="image-6" class="grid-item"><a href="{{url_for('details',image_id = 'image-6')}}"></a></div>
+		</section>
+	</main>
+	{% endblock %}
+
+{% block script %}{{url_for('static',filename='scripts/portfolio.js')}} {% endblock %}

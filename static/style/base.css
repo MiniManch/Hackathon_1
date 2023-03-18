@@ -7,11 +7,23 @@ body{
 	background-color: #100c08;
 	color:#FAF9F6;
 	font-family: 'Space Grotesk', sans-serif;
+	height:100%;
 }
 
-/*navbar start*/
-
+/*navbar*/
 #navbar{
+	position:fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left:0;
+
+	width:8vw;
+	height: 60vh;
+}
+
+/*this will be the values when scrolling a certain distance*/
+#changed-navbar{
 	position:fixed;
 	display: flex;
 	justify-content: center;
@@ -23,19 +35,17 @@ body{
 	z-index: 1;
 }
 
-
 nav{
 	transition: all 0.8s;
 }
 
 /*navbar items*/
 .navbar_item{
-	padding:0;
 	display:inline-block;
 	margin-left: 2vw;
 	margin-top: 3vh ;
-	width: fit-content;	
-	height:2.5vh;
+	width: fit-content;
+	height:2vh;
 }
 
 .navbar_item:hover{
@@ -68,62 +78,4 @@ nav{
 	background-image:url("https://iili.io/H1M8u7S.png") ;
 	background-repeat: no-repeat;
 	background-size: contain;
-}
-
-/*navbar end*/
-main{
-	height:50vh;
-	width:55vw;
-	position: absolute;
-	top:20vh;
-	left:25vw;
-}
-
-.container{
-	height:100%;
-	width:100%;
-}
-
-.col{
-	border: 1px solid black;
-	height:30vh;
-}
-
-.image_1{
-	background-image:url("../images/gallery/2.jpg") ;
-	background-repeat: no-repeat;
-	background-size: contain;
-	color:white;
-}
-
-.image_2{
-	background-image:url("../images/gallery/4.jpg") ;
-	background-repeat: no-repeat;
-	background-size: contain;
-	color:white;
-}
-
-.image_3{
-	background-image:url("../images/gallery/5.jpg") ;
-	background-repeat: no-repeat;
-	background-size: contain;
-	color:white;
-}
-
-.image_4{
-	background-image:url("../images/gallery/6.jpg") ;
-	background-repeat: no-repeat;
-	background-size: contain;
-	color:white;	
-}
-
-.hidden{
-	background-image:none !important ;
-	background-color: red;
-
-}
-button{
-	position: absolute;
-	left:15vw;
-	top:10vh;
 }

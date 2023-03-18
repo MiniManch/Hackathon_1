@@ -9,7 +9,7 @@ let face         = document.querySelector('.symbol');
 function appear(){
 	for (let x of gridItemList){
 		x.classList.toggle('appear');
-	}
+	} 
 }
 
 for(let i of gridItemList){
@@ -23,43 +23,8 @@ for(let i of gridItemList){
 		console.log('out');
 		i.classList.toggle("mouse-over-image");	
 	})
-
-	// click event to make other elements disappear,
-	// only to be returned when delbtn is clicked!
-
 	i.addEventListener("click",function(){
-		console.log('click');
-		appear();
-
-		let newDiv  = document.createElement('div');
-		let delBtn  = document.createElement('p');
-		let infoDiv = document.createElement('div');
-
-		newDiv.style.backgroundImage = getComputedStyle(i, null).backgroundImage;
-		if(i.id === "image-1" || i.id === "image-5"){
-			newDiv.classList.add('display-new-thin');
-
-		}else if(i.id ==="image-3"){
-			newDiv.classList.add('display-new-wide');
-			newDiv.style.left = '15vw';
-		}else{
-			newDiv.classList.add('display-new-wide');
-		}
-
-		delBtn.textContent = 'X';
-		delBtn.classList.add('delete');
-
-		infoDiv.textContent = 'this is some information about this painting!';
-		infoDiv.style.color = 'black';
-
-		delBtn.addEventListener('click',function(){
-			appear();
-			newDiv.parentNode.removeChild(newDiv);
-			infoDiv.parentNode.removeChild(infoDiv);
-		})
-
-		newDiv.append(delBtn)
-		display.append(infoDiv,newDiv);
+		window.open(`/details/${this.id}`);
 	})
 }
 

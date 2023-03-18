@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% block bootstrap_style  %}
+	{% endblock %}
+	<link rel="stylesheet" href="{{url_for('static',filename='style/base.css')}}">
+	<link rel="stylesheet" href="{% block style %} {% endblock %}">
+
+	
+	<title>Domi-Art</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav id="navbar">
+		<div id="icon"></div>
+		<div class="navbar_item"><a href="{{url_for('home')}}">Home</a></div>
+		<div class="navbar_item"><a href="{{url_for('portfolio')}}">Portfolio</a></div>
+	</nav>
+	<!-- Navbar -->
+{% block content%}
+
+{% endblock %}
+
+{% block bootstrap_script %}
+
+{% endblock %}
+	<script src="{% block script %} {% endblock %}"></script>
+
+</body>
+</html>

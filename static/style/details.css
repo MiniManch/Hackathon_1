@@ -1,0 +1,50 @@
+#navbar{
+	 position: absolute; 
+	/* top:5vh; */
+	width:fit-content;
+	margin-right: 0;
+}
+
+#image-1{
+    background-image: url("../images/gallery/1.jpg"); 
+}
+
+#image-2{
+	background-image: url("../images/gallery/2.jpg"); 
+}
+
+#image-3{
+	background-image: url("../images/gallery/3.jpg"); 
+}
+
+#image-4{
+   background-image: url("../images/gallery/4.jpg"); 
+}
+
+#image-5{
+   background-image: url("../images/gallery/7.jpg"); 
+	
+}
+
+#image-6{
+	background-image: url("../images/gallery/6.jpg"); 
+
+ 	
+}
+.row{
+	position: absolute;
+	top:5vh;
+	left: 25vw;
+	height:60vh ;
+	width:50vw ;
+}
+.painting{
+	width:80%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.text{
+	width:50%;
+}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block style %} {{url_for('static',filename='style/landing.css')}} {% endblock %}
+
+{% block content %}
+
+<section id="header">
+	<div id="header-content">
+		<h1>Dominique Lopez Rokah</h1>
+		<p>I'm a dedicated artist , <br>
+			<span id="first_span">living life to the fullest,</span>
+			<br> 
+			<span id="second_span">one brush stroke at a time.</span>
+		</p>
+		<div id="social">
+			<span class="social_item fb"><a href="#"></a></span>
+			<span class="social_item ins"><a href="#"></a></span>
+			<span class="social_item wa"><a href="#"></a></span>
+		</div>
+	</div>
+	<div id="header-image"></div>
+</section>
+
+{% endblock %}
+
+{% block script %} # {% endblock %}
